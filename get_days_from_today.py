@@ -10,4 +10,4 @@ def get_days_from_today(date):
 
     delta = datetime.today() - dateObj
 
-    return delta.days
+    return -delta.days
