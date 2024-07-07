@@ -4,7 +4,6 @@ from datetime import datetime, timedelta, date
 def get_upcoming_birthdays(users):
     current_date = date.today()
     users_to_congratulate = []
-  
 
     for user in users:
         birthday_date = datetime.strptime(user["birthday"], "%Y.%m.%d").date()
@@ -35,7 +34,7 @@ def get_upcoming_birthdays(users):
             if days_from_birthday_to_congratulation_date
             else next_birthday
         )
-        
+
         print(congratulation_date)
 
         users_to_congratulate.append(
